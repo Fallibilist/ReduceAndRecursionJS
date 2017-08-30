@@ -1,7 +1,11 @@
-console.log("The largest number in the array 1,2,33,4,5 is " + [1, 2, 33, 4, 5].reduce((previous, current) => previous > current ? previous : current))
+// Searches the array and prints the largest number found
+console.log("The largest number in the array 1,2,33,4,5 is " + 
+  [1, 2, 33, 4, 5].reduce((previous, current) => previous > current ? previous : current))
 
+// Array to be sorted by the next function
 let arrayToSort = [1, 2, 33, 4, 5, 9, 12, 23, 14, 38, 44, 36]
 
+// Sorts the above array using nested reduce() functions without loops
 console.log("The sorted version of the array "+ arrayToSort + " is " + arrayToSort.reduce(
   (resultArray, numberToInsert) => {
     if(resultArray.length === 0) {
